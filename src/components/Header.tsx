@@ -53,11 +53,34 @@ export const Header = ({ stats, searchTerm, setSearchTerm }: HeaderProps) => {
           </div>
         </div>
 
-        <button className="rounded-lg p-2 text-white hover:bg-claw-panel md:hidden">
-          <Menu />
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+            <a 
+                href="https://x.com/ClawScout_" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-9 h-9 rounded-full bg-claw-panel text-white hover:bg-claw-dim/20 transition-colors border border-claw-dim/20"
+            >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+            </a>
+            <button className="rounded-lg p-2 text-white hover:bg-claw-panel">
+                <Menu />
+            </button>
+        </div>
 
         <div className="hidden md:flex items-center gap-4">
+            <a 
+                href="https://x.com/ClawScout_" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-claw-panel text-white hover:bg-claw-dim/20 transition-colors border border-claw-dim/20"
+                aria-label="Follow us on X"
+            >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+            </a>
             <button className="rounded-full bg-claw-primary px-6 py-2 font-bold text-white transition-transform hover:scale-105 hover:shadow-lg hover:shadow-claw-primary/25">
                 Connect Wallet
             </button>
